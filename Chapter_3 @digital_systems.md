@@ -51,7 +51,7 @@ Denoted by `^`(or $\oplus$).
 | Control | Input | Output |
 |---|---|---|
 | 1 | 0 | 0 |
-| 1 | 1 | 0 |
+| 1 | 1 | 1 |
 | 0 | 0 | open circuit|
 | 0 | 1 | open circuit|
 

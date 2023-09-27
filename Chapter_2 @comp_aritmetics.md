@@ -80,7 +80,8 @@ Decimals use a radix `10`($F \times 10^{E}$). Binary uses `2`($F \times 2^{E}$).
 ### IEEE 754 Format
 - Most used format for representing floats.
 #### format
-##### Formula: $$F \times r^{E}$$
+##### Formula:
+$$F \times r^{E}$$
 - This specifies the 32-bit format
 - MSB: sign bit. `0` for `+ve` numbers, `1` for `-ve` numbers.
 - Next 8 bits: exponent(E).
@@ -94,7 +95,8 @@ Decimals use a radix `10`($F \times 10^{E}$). Binary uses `2`($F \times 2^{E}$).
 |1: Sign|15: Exponent|112: Mantissa(significand)|
 ```
 NOTE: mantissas always start with 1.\* in normalized form. We don't need to represent the leading 1, giving us an extra bit of accuracy.
-##### Formula $$ x = (-1)^{s} \times (1 + M)\times 2^{E} $$ `x` = value, `s` = sign, `M` = mantissa, `E` = exponent
+##### Formula
+$$x = (-1)^{s} \times (1 + M)\times 2^{E}$$ `x` = value, `s` = sign, `M` = mantissa, `E` = exponent
 Example: `x = 18.45`
 
 - First we split it to `18`, and `0.45`.
