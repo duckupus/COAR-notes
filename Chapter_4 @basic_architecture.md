@@ -176,7 +176,7 @@ Cycles
 [^bignote]: Assembly can be considered as one level above machine code, that is fetched and decoded in the [fetch-decode-execute cycle](#Fetch-Decode-Execute%20cycle). We will cover the assembly language in later topics. However, for the curious, `MOV` as the mnemonic suggests is a MOVe instruction. In architectures(like in `8086`), usage is specified as such: `MOV DEST, SRC` this is like we are assigning using the `=` operand. i.e. **DEST = SRC** becoming **MOV DEST, SRC**.
 
 	For the Write example, we are given the assembly snippet, `MOV [1000h], AL`(simplified because the value is unimportant). Lets break it down. The two operands of the MOV instruction are `[1000h]`, and `AL`. Lets start with `[1000h]`. Firstly, it's important to note that `1000h` is a hex value. The 1000h is a memory address, which points to a certain area in memory, addressed 1000h. Then, 1000h is being dereferenced with the brackets(i.e. MOV will write `AL` to the value STORED at `1000h`. **You can kinda think of brackets as a pointer in C/C++ equivalent terms.**). Next the second operand, `AL`. AL, is part of a general register, and is 8-bits long.
- 
+
 	For the read example, the assembly snippet is flipped. `MOV AL, [1000h]`. This simply reads the value stored at the memory address `1000h`,  and stores it into `AL`. AL is actually part of a bigger general register, `AX`. AX being 16-bits wide. AL accesses the LOW part of AX, while `AH` accesses the HIGH parts of AX, with AL and AH being 8-bits.
 
 ### Memory Connection
