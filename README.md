@@ -1,4 +1,4 @@
-# Resources
+# Computer Architecture
 
 | Chap | Name | Notes |
 |---|---|---|
