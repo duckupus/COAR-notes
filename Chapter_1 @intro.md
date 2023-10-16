@@ -59,7 +59,7 @@ Stores data
 moves data between computer and physical environment
 ###### System interconnection
 allows interaction between components. (e.g. system bus)
-![Single core computer structure](./chap_1_resources/chap_1_s_com_dgm.png)
+![Single core computer structure](chap_1_resources/chap_1_s_com_dgm.png)
 
 ##### Multicore computer structure
 Multicore computers are computers that has multiple processors in a single chip
