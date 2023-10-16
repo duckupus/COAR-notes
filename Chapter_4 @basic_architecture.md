@@ -194,7 +194,3 @@ Cycles
 	- Specific memory addresses mapped to specific physical locations
 - Port mapped I/O
 	- Special I/O commands needed to access memory. E.g. IN and OUT commands
-
-
-This notes are based on SP's module: <br>
-Author: [<code>@duckupus</code>](https://github.com/duckupus)

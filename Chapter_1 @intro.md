@@ -213,8 +213,3 @@ Design changes that helped improve Microprocessors
 Formula: $$S(N) = \frac{1}{\left((1-P)+\left(\frac{P}{N}\right)\right)}$$ Where function $S$ = maximum speedup, $N$ = amount of processors used, and $P$ = proportion of a system/program that can be made parallel.
 
 As $N$ grows, the speedup tends to be: $\frac{1}{1-P}$
-
-
-
-This notes are based on SP's module: <br>
-Author: [<code>@duckupus</code>](https://github.com/duckupus)

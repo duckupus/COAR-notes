@@ -182,6 +182,3 @@ When `S` and `R` are `1`, the outputs of `Q` and `!Q` remain the same(in a NAND 
 - Computers use CMOS(Complementary MOS), that uses both n and p-type transistors.[^2]
 
 [^2]: Fun fact! did you know that Bipolar junction transistors(BJTs) can also be used to create logic gates?
-
-This notes are based on SP's module: <br>
-Author: [<code>@duckupus</code>](https://github.com/duckupus)

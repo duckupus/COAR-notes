@@ -161,6 +161,3 @@ Endian refers to how the bytes are stored<br>
 | 0x02 | A4 | A8 |
 | 0x01 | A8 | A4 |
 | 0x00 | B0 | A2 |
-
-This notes are based on SP's module: <br>
-Author: [<code>@duckupus</code>](https://github.com/duckupus)
