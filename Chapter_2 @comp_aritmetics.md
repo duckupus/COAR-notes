@@ -94,7 +94,7 @@ $$F \times r^{E}$$
 128-bit
 |1: Sign|15: Exponent|112: Mantissa(significand)|
 ```
-NOTE: mantissas always start with 1.\* in normalized form. We don't need to represent the leading 1, giving us an extra bit of accuracy.
+NOTE: The mantissa always start with 1.\* in normalized form, in the base2 number system. We don't need to represent the leading 1, giving us an extra bit of accuracy.
 ##### Formula
 $$x = (-1)^{s} \times (1 + M)\times 2^{E}$$ `x` = value, `s` = sign, `M` = mantissa, `E` = exponent
 Example: `x = 18.45`
@@ -117,7 +117,7 @@ Represented by 011100[1100][1100][repeating]
 - Decimal point in scientific notation: $1.845 \times 10$
 - In binary case, it'll be `1.0010 0111 00[11 00][11 00][cont]x2^{4}`
 - Hence, `Sign(s) = 0`, `Exponent(e) = 4[0b100] + 127`, `Mantissa(M) = 0010 0111 0011 0011 0011 001`
-- **NOTE: `Exponent(e)` is being added with `127[0x7F]`. This is as we can then represent `+ve` and `-ve` exponents(e.g. `-10 + 127` = 117.). Hence, when finding the exponent, we need to subtract by `127`.**
+- **NOTE: `Exponent(e)` is being added with `127[0x7F]`. We need to represent `+ve` and `-ve` exponents. Hence, when finding the exponent, we need to subtract by `127`.(e.g. to represent `2^{-10}`, `-10 + 127` = 117.)**
 - We end up with: `[0][100 0001 1][001 0011 1001 1001 1001 1001]`.
 - Converting it back to decimal: `Sign(s) = 0`, `Exponent(e) = 131 - 127 = 4`. `Mantissa(M) = 0.15312492847442627` (calculated by converting back using $2^{-n}$)
 - Formula: $$x = (-1)^{0} \times (1 + 0.15312492847442627)\times 2^{4} = 18.449[cont]$$ This shows that `18.45` cannot be represented precisely in binary.
