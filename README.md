@@ -6,7 +6,7 @@
 | 2| COMP_ARITMETICS | [Chapter_2 @comp_aritmetics](Chapter_2%20@comp_aritmetics.md)|
 | 3| DIGITAL_SYSTEMS | [Chapter_3 @digital_systems](Chapter_3%20@digital_systems.md)|
 | 4| BASIC_ARCHITECTURE | [Chapter_4 @basic_architecture](Chapter_4%20@basic_architecture.md)|
-| 5| IO |  |
+| 5| IO |[Chapter_5 @Input_Output](Chapter_5%20@Input_Output.md)|
 | 6| REGISTERS_ASSEMBLY_LANGUAGE |  |
 | 7| INTEL_PENTIUM |  |
 | 8| CACHE |  |
