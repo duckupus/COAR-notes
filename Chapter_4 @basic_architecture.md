@@ -158,6 +158,7 @@ flowchart TD
 ## Memory Write Cycles
 - It takes around 4 clock cycles to read/write. 
 ### Writing
+e.g.: `MOV AL, [1000H]`
 Cycles
 1. stabilize address
 2. stabilize data; write starts
@@ -165,6 +166,7 @@ Cycles
 4. Write ends; release address, data.
 
 ### Reading
+e.g.: `MOV [1000H], AL`
 Cycles
 1. stabilize address
 2. read starts
