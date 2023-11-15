@@ -39,6 +39,7 @@ Registers help reduce expensive memory accesses, to help keep things fast.
 | BX  | base                | 16-bits |
 | CX  | count               | 16-bits |
 | DX  | data                | 16-bits |
+
 For general registers, you can access it's higher or lower bits via smaller, 8-bit registers, that make up the general register.
 For example, `AX` is composed of `AL` and `AH`, which accesses the LOW and HIGH segments of the register accordingly.
 ## Pointer registers
@@ -48,8 +49,8 @@ For example, `AX` is composed of `AL` and `AH`, which accesses the LOW and HIGH 
 | SP  | Stack Pointer       | 16-bits |
 | BP  | Base pointer        | 16-bits |
 | IP  | Instruction Pointer | 16-bits |
-IP is inaccessible to programmers, but can still be manipulated with asm instructions.
 
+IP is inaccessible to programmers, but can still be manipulated with asm instructions.
 ## Index registers
 
 | reg | Index registers   | size    | 
@@ -64,6 +65,7 @@ IP is inaccessible to programmers, but can still be manipulated with asm instruc
 | DS  | Data Segment      | 16-bits |
 | SS  | Stack Segment     | 16-bits |
 | ES  | Extra Segment     | 16-bits |
+
 These registers are used to address the RAM space, due to RAM space being larger then the 16-bits held by the registers. 
 Represented as `SEGMENT:REGISTER`. e.g.: `DS:AX`
 ### calculating segment offsets
@@ -78,6 +80,7 @@ Represented as `SEGMENT:REGISTER`. e.g.: `DS:AX`
 | SP              | SS      | Stack        |
 | BP              | SS      | Data         |
 | BX, SI, DI, etc | DS      | Data         |
+
 ### segment override
 You can override the segment with instructions like
 ```x86
@@ -100,6 +103,7 @@ Flags are used to show what has happened within the processor
 | 6   | Register relative      | `MOV AX, [BX + 4h]` or `MOV AX, 4h[BX]`          |
 | 7   | Based indexed          | `MOV AX, [SI + BX]` or `MOV AX, [BX][SI]`        |
 | 8   | Relative based indexed | `MOV AX, [SI + BX + 4h]` or `MOV AX, 4h[BX][SI]` | 
+
 REMEMBER: `[AX]` refers to the **ADDRESS** stored in `AX`. If `AX` = `10h`, and address `10h` = `ffh`, `MOV BX, [AX]` will store `ffh` into `BX`. <br>
 These addressing modes can be in other assembly instructions, when appropriate
 # Assembly
