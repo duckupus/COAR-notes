@@ -85,7 +85,7 @@ Tips for K-maps
 | 0 | 0 | 0 | 0 |
 | 0 | 1 | 1 | 0 |
 | 1 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 1 |
 
 sum = $A \oplus B$ <br>
 carry = $A \cdot B$ <br>
