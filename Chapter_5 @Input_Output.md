@@ -30,8 +30,8 @@ Connecting inputs in series. It's a hardware polling method. When processor dete
 1. **Bus arbitration**(vectored interrupt)
 One module can raise an interrupt at a time. Interrupting I/O Module gains control of the Bus before triggering the interrupt. After acknowledging the interrupt, the processor receives a vector that is used to interact with the I/O module.
 
-### Direct Memory Access
-Used for transferring a lot of data. Additional module on system bus that transfers data on behalf of the processor.
+### Direct Memory Access(DMA)
+Used for transferring a lot of data. Additional module on system bus that transfers data on behalf of the processor. It can transfer data to/fro memory over system bus directly.
 
 Only uses the bus when the processor isn't using it. However, can force the processor to suspend operations in a technique called Cycle stealing.
 
