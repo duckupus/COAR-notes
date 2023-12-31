@@ -8,7 +8,7 @@
 | 4| BASIC_ARCHITECTURE | [Chapter_4 @basic_architecture](Chapter_4%20@basic_architecture.md)|
 | 5| IO |[Chapter_5 @Input_Output](Chapter_5%20@Input_Output.md)|
 | 6| REGISTERS_ASSEMBLY_LANGUAGE | [Chapter_6 @registers_assembly_language](Chapter_6%20@registers_assembly_language.md)  |
-| 7| INTEL_PENTIUM |  |
+| 7| INTEL_PENTIUM | [Chapter_7 @intel_pentium](Chapter_7%20@intel_pentium.md) |
 | 8| CACHE |  |
 | 9| PIPELINE |  |
 |10| RISC_CISC_ARM |  |
