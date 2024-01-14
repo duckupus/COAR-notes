@@ -9,8 +9,8 @@
 | 5    | IO                          | [Chapter_5 @Input_Output](Chapter_5%20@Input_Output.md)                               |
 | 6    | REGISTERS_ASSEMBLY_LANGUAGE | [Chapter_6 @registers_assembly_language](Chapter_6%20@registers_assembly_language.md) |
 | 7    | INTEL_PENTIUM               | [Chapter_7 @intel_pentium](Chapter_7%20@intel_pentium.md)                             |
-| 8    | CACHE                       | [Chapter_8 @cache](Chapter_8%20@cache.md)                                             | 
-| 9    | PIPELINE                    |                                                                                       |
+| 8    | CACHE                       | [Chapter_8 @cache](Chapter_8%20@cache.md)                                             |
+| 9    | PIPELINE                    | [Chapter_9 @pipeline](Chapter_9%20@pipeline.md)                                       |
 | 10   | RISC_CISC_ARM               |                                                                                       |
 | 11   | ADVANCED_ARCHITECTURES      |                                                                                       |
 
