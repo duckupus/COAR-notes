@@ -99,7 +99,7 @@ The Cache is split into two parts: `Tag`(address) and `Cache line`(data).
 `Tags` are stored in the cache. `Index` and `Offset` are not.
 #### Formulas
 > Offset = $\log_{2}{(\text{Cache line length})}$ bits \
-> Index = $\frac{\text{Cache Size}}{\text{Cache line length}}$ bits \
+> Index = $\log_{2}{(\frac{\text{Cache Size}}{\text{Cache line length}})}$ bits \
 > Tag = $\text{System memory address} - \text{offset} - \text{index}$ bits
 
 ### Fully Associative Cache
