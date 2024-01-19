@@ -11,7 +11,7 @@
 | 7    | INTEL_PENTIUM               | [Chapter_7 @intel_pentium](Chapter_7%20@intel_pentium.md)                             |
 | 8    | CACHE                       | [Chapter_8 @cache](Chapter_8%20@cache.md)                                             |
 | 9    | PIPELINE                    | [Chapter_9 @pipeline](Chapter_9%20@pipeline.md)                                       |
-| 10   | RISC_CISC_ARM               |                                                                                       |
+| 10   | RISC_CISC_ARM               | [Chapter_10 @risc_arm_processors](Chapter_10%20@risc_arm_processors.md)                                                   |
 | 11   | ADVANCED_ARCHITECTURES      |                                                                                       |
 
 This notes are created with a focus on both summary + ease of understanding. However, this paradigm disagrees at times. Sometimes I favor understanding, other times for summary.
