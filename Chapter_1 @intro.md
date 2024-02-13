@@ -4,7 +4,7 @@
 	- related with high-level design decisions
 - **Computer organization**: physical implementation of architecture design, also known as [Microarchitecture](https://en.wikipedia.org/wiki/Microarchitecture) <br>
 	- related with low-level implementation of *Computer architecture*
-> [!example] Computer architecture VS organization
+> [!EXAMPLE] Computer architecture VS organization
 > Architecture: How can the programmer multiply?<br>
 > Organization: How should we implement multiplication?(addition loops? multiplication algorithms?)
 
@@ -63,7 +63,7 @@ allows interaction between components. (e.g. system bus)
 
 ##### Multicore computer structure
 Multicore computers are computers that has multiple processors in a single chip
-> [!info] Processing Units
+> [!INFO] Processing Units
 > A processing unit contains a few things, namely
 > 1. Control Unit
 > 2. Arithmetic and logic unit (ALU)
