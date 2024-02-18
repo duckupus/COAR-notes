@@ -13,10 +13,30 @@ Introduced 1985.
 - NO cache
 - NO FPU
 
-### 32-bit registers
+### 32-bits extension
+#### Registers
 With the advent of 32-bits, 16-bit registers need to be extended. For example, AX becomes EAX, BX becomes EBX, etc.
 
 Hence, 80386 has a 32-bit address bus too.
+
+#### Memory Interface
+The 32-bit memory is partitioned into 4 different "banks", that are referenced: $\overline{\text{BE0}}$ to $\overline{\text{BE3}}$ (Bank Enable). This allows each byte to access a different bank individually.
+
+> [!NOTE]
+> <h3>Example</h3>
+> 
+> `MOV AL, [40h]` is a 1 byte operation. <br>
+> $\overline{\text{BE3}}$ = 1, $\overline{\text{BE2}}$ = 1, $\overline{\text{BE1}}$ = 1, $\overline{\text{BE0}}$ = 0
+> 
+> `MOV AX, [40h]` is a 2 byte operation. <br>
+> $\overline{\text{BE3}}$ = 1, $\overline{\text{BE2}}$ = 1, $\overline{\text{BE1}}$ = 0, $\overline{\text{BE0}}$ = 0
+> 
+> `MOV EAX, [40h]` is a 4 byte operation. <br>
+> $\overline{\text{BE3}}$ = 0, $\overline{\text{BE2}}$ = 0, $\overline{\text{BE1}}$ = 0, $\overline{\text{BE0}}$ = 0
+> 
+> Individual bytes can also be selected. <br>
+> `MOV AL, [41h]` is a 1 byte operation. <br>
+> $\overline{\text{BE3}}$ = 1, $\overline{\text{BE2}}$ = 1, $\overline{\text{BE1}}$ = 0, $\overline{\text{BE0}}$ = 1
 
 ## PENTIUM Processor
 Introduced 1993.
