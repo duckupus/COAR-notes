@@ -62,6 +62,8 @@ Modern compilers have quite a few different optimizations. Re-arranging branches
 [Copy propagation](https://en.wikipedia.org/wiki/Copy_propagation) is usually run after other optimizations to improve performance. It reduces instructions used by replacing "redundant" operations, where the value is already stored elsewhere.
 ### Loop unrolling
 [Loop unrolling](https://en.wikipedia.org/wiki/Loop_unrolling) unrolls loops that can be hard coded. This is as loops have some "overhead" in order to setup. This is used for loops that have upper and lower limits predefined, and saves time without the programmer needing to unroll it themselves.
+
+If the loop is massive and cannot be completely removed, reducing the amount of iterations the loop goes through can speed up the program too.
 ```c
 for(int i=0; i < 3; i++) {
 	x[i] = x[i] ^ 0x22;
