@@ -12,7 +12,9 @@ Two's complement is split into 2 steps.
 2. Add one to the complement. E.g. `1100` -> `1101`
 
 Hence, the two's complement of `0011` is `1101`. <br>
-> [!info] Number representation
+> [!IMPORTANT]
+> <h3>Number representation</h3>
+> 
 > In a n-bit signed[^1] number, two's complement is the `n-1`'s bit which is the MSB/Highest bit. <br>
 
 [^1]: "Signed" means the number can take both `+ve` and `-ve` values. "Unsigned" means that there is no "sign" bit, and hence the number can only be `+ve`.(two's complement is not applied)
@@ -25,7 +27,9 @@ Two's complement is very useful.
 
 [^2]: This is one more then [One's complement](https://en.wikipedia.org/wiki/Ones%27_complement). This is as while One's complement has 2 representations of `0`, being `+0` and `-0`, Two's complement only has 1 `0`, being `0` itself.
 
-> [!note]- Subtraction via addition example
+> [!NOTE]
+> <h3>Subtraction via addition example</h3>
+> 
 > This is a 8-bit example, but you can extend the idea to n-bits.
 > ```
 > A = 0100 0011 //67, 0x43
@@ -129,6 +133,7 @@ Represented by 011100[1100][1100][repeating]
 - Values from `0x20`('` `') to `0x7E`('`~`') are printable.
 - `0x00` to `0x1F` and `0x7F` are special characters. Some notable ones include:
  <!-- TODO: CHANGE TO BOX -->
+ 
 | Value | Name | Representation(coding) |
 | --- | --- | --- |
 |`0x00`| NULL| NULL|
