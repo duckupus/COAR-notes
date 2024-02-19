@@ -100,7 +100,8 @@ The Cache is split into two parts: `Tag`(address) and `Cache line`(data).
 #### Formulas
 > Offset = $\log_{2}{(\text{Cache line length})}$ bits \
 > Index = $\log_{2}{(\frac{\text{Cache Size}}{\text{Cache line length}})}$ bits \
-> Tag = $\text{System memory address} - \text{offset} - \text{index}$ bits
+> Tag = $\text{System memory address} - \text{offset} - \text{index}$ bits \
+> Address length= $\log_{2}{(\text{main memory size})}$
 
 ### Fully Associative Cache
 <!-- I probably need to elaborate more when I actually... know -->
