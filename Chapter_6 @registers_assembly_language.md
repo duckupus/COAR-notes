@@ -133,6 +133,24 @@ These addressing modes can be in other assembly instructions, when appropriate
 | `NEG`       | `NEG opr`       | opr := -opr                                          |
 
 <sub>opr8 := 8 bit operand. opr16 := 16 bit operand.</sub>
+### MUL/DIV
+Multiply and dividing are a bit more confusing.
+
+> [!NOTE]
+> `DX:AX` refers to prepending(putting in-front) DX to AX.
+
+#### MUL
+```asm
+MUL opr8  ; AX = AL*opr8.     Word = byte*byte
+MUL opr16 ; DX:AX = AX*opr16. Extra bits overflow to DX.
+          ; e.g.: ABCD*ABCD = 734B 8229; DX:=734Bh, AX:=8229h. 
+```
+
+#### DIV
+```asm
+DIV opr8  ; AL = AX / opr8.     (quotient); AH = AX % opr8.     (remainder/mod);
+DIV opr16 ; AX = DX:AX / opr16. (quotient); DX = DX:AX % opr16. (remainder/mod);
+```
 
 [^1]: No, it's not Analog Digital Conversion, stop thinking about MAPP
 ## Logical instructions
