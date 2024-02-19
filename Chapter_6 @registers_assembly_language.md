@@ -128,9 +128,11 @@ These addressing modes can be in other assembly instructions, when appropriate
 | `INC`       | `INC opr`       | opr := opr + 1                                       |
 | `DEC`       | `DEC opr`       | opr := opr - 1                                       |
 | `CMP`       | `CMP dst, src`  | dst - src                                            |
-| `MUL`       | `MUL opr`       | AX := AL $\times$ opr                                |
+| `MUL`       | `MUL opr`       | AX := AL $\times$ opr8; AX := AX $\times$ opr16                                |
 | `DIV`       | `DIV opr`       | AX := AL $\div$ opr; AL := quotient, AH := remainder | 
 | `NEG`       | `NEG opr`       | opr := -opr                                          |
+
+<sub>opr8 := 8 bit operand. opr16 := 16 bit operand.</sub>
 
 [^1]: No, it's not Analog Digital Conversion, stop thinking about MAPP
 ## Logical instructions
