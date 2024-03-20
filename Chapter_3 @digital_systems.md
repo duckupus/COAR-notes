@@ -103,8 +103,8 @@ carry = $A \cdot B$ <br>
 | 1 | 1 | 0 | 0 | 1 |
 | 1 | 1 | 1 | 1 | 1 |
 
-Sum = Cin $\oplus$(A$\oplus$B) <br>
-Cout = AB + Cin(A$\oplus$B) <br>
+Sum = Cin $\oplus$(A $\oplus$ B) <br>
+Cout = AB + Cin(A $\oplus$ B) <br>
 We can stack full-adders to create a n-bit adder
 #### Decoder
 - Decoders are combinational circuits.
